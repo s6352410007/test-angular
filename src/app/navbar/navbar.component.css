@@ -1,0 +1,105 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    background-color: #0ab4ab ;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu li {
+    margin-left: 2rem;
+}
+
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu li :hover {
+color: red;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+
+.menu li .nav-active{
+    color: rgb(255, 0, 0);
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+header .sticky{
+    padding: 5px 100px;
+    background: #000;
+}
+
+/* --------------------------------- */
+
+/* General reset */
+
+.logo img {
+    width: 200px; /* ปรับขนาดความกว้างของโลโก้ */
+    height: auto; /* ปรับให้ความสูงของโลโก้ปรับตามอัตราส่วนของความกว้าง */
+}
+
+
+
+/* Navigation bar styles */
+.nav0 {
+    background-color: whitesmoke ;
+    color: white;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu0 li {
+    margin-left: 2rem;
+}
+
+.menu0 li a {
+    text-decoration: none;
+    color: #0ab4ab;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+
+.menu0 {
+    list-style: none;
+    display: flex;
+}
+
+.menu0 li a:hover {
+    color: #ddd;
+}
+
+
+

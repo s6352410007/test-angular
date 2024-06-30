@@ -1,0 +1,79 @@
+
+
+img{
+        width: 200px; /* ปรับขนาดความกว้างของโลโก้ */
+        height: auto; /* ปรับให้ความสูงของโลโก้ปรับตามอัตราส่วนของความกว้าง */
+}
+
+.div1{
+
+    margin-right: 200px;
+}
+
+
+p a{
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left; 
+    text-decoration: none;
+    color: #666;
+}
+
+
+
+.titlefooter {
+    background-color: #f0f0f0;
+    padding: 1px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.titlefooter > div {
+    display: inline-block;
+    text-align: left; 
+}
+
+
+
+.titlecontact {
+    color: #4b4b4b;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.titlefooter ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.titlefooter li {
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+ul li a:hover{
+    color: #0ab4ab;
+
+}
+
+
+
+.endfooter {
+
+    color: rgb(54, 54, 54);
+    text-align: center;
+    font-weight: bold;
+
+}

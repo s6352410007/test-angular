@@ -9,5 +9,64 @@
 </head>
 <body>
   <app-root></app-root>
+  <!-- ------------------------routes------------------------ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+      const path = window.location.pathname
+      console.log(path)
+      if (path == '/') {
+        document.getElementById('navHome').click();
+      } else if (path.includes('/home')) {
+        document.getElementById('navHome').classList.add('nav-active')
+      } else if (path.includes('/about')) {
+        document.getElementById('navAbout').classList.add('nav-active')
+      }
+    });
+  </script>
+
+
+
+<!-- -----------------------slide img------------------------ -->
+  <script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.carousel-inner img');
+      if (index >= slides.length) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = slides.length - 1;
+      } else {
+        currentIndex = index;
+      }
+      const offset = -currentIndex * 100;
+      document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    setInterval(() => {
+      nextSlide()
+    }, 3000);
+    
+  </script>
+
+
+
+<script>
+  window.addEventListener("scroll" , function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky" , window.scrollY > 0)
+  })
+</script>
+
+<script src="https://kit.fontawesome.com/f15ada6f21.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

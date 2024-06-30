@@ -1,0 +1,63 @@
+/* styles.css */
+/* styles.css */
+
+
+
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+h1 {
+    
+    color: #0ab4ab;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-left: 100px; /* ขยับไปทางซ้ายเพื่อให้ห่างจากขอบซ้ายเป็น 100px */
+    margin-right: 100px; /* ขยับไปทางขวาเพื่อให้ห่างจากขอบขวาเป็น 100px */
+    margin-top: 50px;
+    position: relative; /* เพื่อกำหนดตำแหน่งสำหรับเส้นใต้ */
+    display: inline-block; /* เพื่อให้เส้นใต้ไม่ขยับหลังจากคำ */
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* ปรับตำแหน่งเส้นใต้ให้อยู่ใต้ข้อความ */
+    left: 0;
+    width: 15%; /* ความยาวของเส้นใต้เท่ากับความยาวของข้อความ */
+    height: 4px; /* ความสูงของเส้นใต้ */
+    background-color: red; /* สีของเส้นใต้ */
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* ปรับตำแหน่งเส้นใต้ให้อยู่ใต้ข้อความ */
+    right: 0;
+    width: 85%; /* ความยาวของเส้นใต้ */
+    height: 4px; /* ความสูงของเส้นใต้ */
+    background-color: #0ab4ab; /* สีของเส้นใต้ */
+}
+
+
+p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-bottom: 20px;
+    margin-left: 100px; 
+    margin-right: 100px; 
+    margin-top: px; 
+
+}
+
+p img {
+    display: block;
+    margin: auto; /* ใช้ margin: auto เพื่อจัดให้ภาพอยู่ตรงกลางในพื้นที่ของ <p> */
+}
